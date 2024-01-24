@@ -229,9 +229,9 @@ header ul.nav li {
 }
 
 header ul.nav li a {	
-	font-size: 16px;
+	font-size: 20px;
 	border:none;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform:uppercase;
 	text-align: right;
 }
@@ -294,7 +294,7 @@ header ul.nav li ul li ul {
 color: #F58A2E;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-color: #81c402;
+color: #f02409;
 background-color: transparent;
 }
 
