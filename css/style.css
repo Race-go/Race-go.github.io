@@ -86,7 +86,7 @@ header .navbar {
 }
 .navbar-default .navbar-brand{
 color: #D81265;
-background: #81c402;
+background: #c40f0249;
 height: 114px;
 position: absolute;
 top: -28px;
@@ -111,7 +111,7 @@ display:none;
 }
 header .navbar-collapse  ul.navbar-nav {
     float: right;
-    margin-right: 0;
+    margin-right: 10;
 }
 header .navbar {
 min-height: 70px;
@@ -229,7 +229,7 @@ header ul.nav li {
 }
 
 header ul.nav li a {	
-	font-size: 14px;
+	font-size: 16px;
 	border:none;
 	font-weight: 400;
 	text-transform:uppercase;
@@ -245,7 +245,7 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #5A5A5A;
+  color: #0f0f0f;
   text-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0) !important;
 }
@@ -647,7 +647,7 @@ padding-top: 8px;
 ul.breadcrumb li a:hover {
 	text-decoration:none;
 }
-img{width: 100%;}
+img{width: 40%;}
 .post3 img {
 margin-bottom: 20px;
 max-width: 100%;
