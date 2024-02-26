@@ -26,7 +26,7 @@ a:active {
 
 h1,h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
-	font-weight:700;
+	font-weight:800;
 	line-height:1.1em;
 	color: #333;
 	margin-bottom: 7px;
@@ -608,17 +608,18 @@ position: relative;
 margin: 0;
 padding: 0;
 /* color: #F58A2E; */
-background: #E4E4E4;  margin-top: 3px;  
+background: #000000;  margin-top: 3px;  
 padding-top: 8px;
 /* border: 1px solid #81C402; */
 }
 
 
 #inner-headline h2.pageTitle{
-	color: #81C402;
+	color: #af4702;
 	padding: 5px 15px;
 	text-align: right;
 	display:block;
+	font-size: 40px;
 }
 
 /* --- breadcrumbs --- */
@@ -647,7 +648,7 @@ padding-top: 8px;
 ul.breadcrumb li a:hover {
 	text-decoration:none;
 }
-img{width: 40%;}
+img{width: 60%;}
 .post3 img {
 margin-bottom: 20px;
 max-width: 100%;
@@ -943,12 +944,12 @@ blockquote cite a:visited 				{ color:#555; }
 
 /* --- button --- */
 .btn{text-align: center;
-background: #F58A2E;
+background: #000000;
 color: #fff;
 border-radius: 0;padding: 12px 22px;border: 0;}
 .btn-theme {
 	color: #fff;
-	background: rgba(245, 138, 46, 1);
+	background: rgb(0, 0, 0);
 	border: 0;
 	padding: 12px 30px;
 	font-weight: bold;
@@ -1171,7 +1172,7 @@ color: #222;
  .pricing-box-item {
 border: 1px solid #e6e6e6;
 	
-background: #81C402;
+background: #CF6A14;
 	position:relative;
 	margin:0 0 20px 0;
 	padding:0;
@@ -1201,7 +1202,7 @@ background: #81C402;
 
 .pricing-box-item .pricing-heading h3 strong {
 	font-size:28px;
-	font-weight:700;
+	font-weight:500;
 	letter-spacing:-1px;
 }
 .pricing-box-item .pricing-heading h3 {
@@ -1221,7 +1222,7 @@ background: #81C402;
 
 .pricing-box-item .pricing-terms  h6 {
 	margin-top:10px;
-	color: #81C402;
+	color: #000000;
 	font-size: 27px;
 	font-weight: normal;
 	padding: 25px 0 10px;
