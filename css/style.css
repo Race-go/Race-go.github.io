@@ -291,10 +291,10 @@ header ul.nav li ul li ul {
   content:none;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-color: #F58A2E;
+color: #a70404;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-color: #f02409;
+color: #a70404;
 background-color: transparent;
 }
 
@@ -445,7 +445,7 @@ margin: auto;
 }
 .aboutUs{
 padding:40px 0 0;
-background: #F58A2E;
+background: #0a0a0a;
 color: #fff;
 }
 .aboutUs h2, .aboutUs h4{
@@ -1139,7 +1139,7 @@ ul.team-detail li ul.social-network li i {
 }
 
 .pricing-container strong{
-color:#353535;
+color:#3b0202;
 }
 
 .pricing-container ul{
@@ -1294,7 +1294,7 @@ footer .widget .flickr_badge img {
 footer{
 	padding:50px 0 0 0;
 	color:#f8f8f8;
-	background: #2D2D2D;
+	background: #af4702;
 }
 
 footer a {
