@@ -444,18 +444,29 @@ bottom: -30px;
 margin: auto;
 }
 .aboutUs{
-padding:40px 0 0;
+padding:100px 0 0 ;
 background: #0a0a0a;
 color: #fff;
 }
 .aboutUs h2, .aboutUs h4{
 color:#fff;
 line-height: 24px;
+margin-left: 20px;
+}
+.aboutUs p{
+	margin-left: 20px;
+}
+.aboutUs li{
+	margin-left: 20px;
 }
 .aboutUs .row{
-    margin-bottom: 0px;
+    margin-bottom: 100px;
 
 }
+.aboutUs img{
+	width: 100%;
+}
+
 img.img-center {
 margin: 0 auto;
 display: block;
