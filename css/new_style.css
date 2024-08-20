@@ -1,0 +1,10 @@
+.img-responsive {
+    width: 90%;
+    height: auto;
+}
+
+.custom-container {
+    padding-left: 200px; /* Adjust this value as needed */
+    padding-right: 200px; /* Adjust this value as needed */
+    padding-bottom: 30px; /* Adjust this value as needed */
+}
