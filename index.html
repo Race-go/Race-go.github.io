@@ -19,13 +19,13 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-</head>
+
 <body>
-<div id="wrapper" class="home-page">
+<!-- <div id="wrapper" class="home-page"> -->
 	<!-- start header -->
-	<header>
+	<!-- <header>
         
-        <div class="navbar navbar-default navbar-static-top" style ="background-image: url('img/header_bg.png'); height: 800px">
+        <div class="navbar navbar-default navbar-static-top" style ="background-image: url('img/header_bg.png'); height: 750px; object-fit: cover;">
             </div>
             <!-- <div class="container" >  -->
                 <!-- <div class="navbar-header"> 
@@ -37,7 +37,7 @@
                     <!-- <a><img src="img/WhiteBackground-RaceGo-Logo-Normal.jpg" alt="logo" href="index.html"/></a> -->
                     <!-- <img src="img/DAG_Panorama 1_compressed.jpg" alt="Additional Image" style="width: 100%; height: auto; display: block;" /> -->
                 <!-- </div> --> 
-    <div class="navbar-collapse collapse " style = "background-color: #0a0a0a">
+    <!-- <div class="navbar-collapse collapse " style = "background-color: #0a0a0a">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li> 
                 <li><a href="research.html">Research</a></li>
@@ -48,27 +48,61 @@
             </ul>
         </div>
     </div>
-	</header>
+	</header> -->
 	<!-- end header -->
 	<!-- <section id="banner"> -->
+    </head>
+    <body>
+      <!-- Header Section -->
+      <header class="bg-light">
+        <div class="container-fluid" style="background-color: #0a0a0a;">
+          <div class="row align-items-center py-3">
+            <!-- Image -->
+            <div class="col-12 text-center">
+              <img src="img/header_bg.png" alt="Website Header" class="img-fluid" style= "width: 100%; height: auto">
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a0a0a;">
+            <div class="container-fluid">
+          
+              <!-- Toggle Button for Mobile -->
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+          
+              <!-- Collapsible Menu -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="research.html">Research</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="people.html">People</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
     <section class="aboutUs">
         <div class="custom-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aligncenter"><h2 class="aligncenter">Race-Go Project</h2></div>
-                    <br/>
-                </div>
-            </div> 
-            <div class="row">
-                                <div class="col-md-6">
-                                    <img src="img/PartB2_Fig5.jpg" alt="" class="img-responsive" style="margin-bottom: 50px;">
-                                    <p><h4>Overview of the work breakdown structure of the RACE-GO project. Bottom right figure with image of HIP109427 B is taken from Steiger et al. 2021. Acronyms: PI-SLM = polarization independent spatial light modulator; eAPD = electron avalanche photo-diode; CDI = coherent differential imaging; GTO = guaranteed time observing.</h4></p>
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="img/PartB2_Fig5.jpg" alt="" class="img-responsive" style="margin-bottom: 50px;">
-                                    <p><h4>(a) The completed DAG telescope enclosure, atop Karakaya Ridge (3,170m); (b) The completed DAG telescope structure in EIE facilities, Italy, as of late 2020; (c) 3-D model of the DAG Adaptive Optics (AO) Nasmyth platform with all the instruments shown (TROIA AO system, PLACID coronagraph, and DIRAC camera); (d) The PLACID optical design and interface with other instruments on the AO Nasmyth optical table.</h4></p>
-                                </div>
-                            </div>
+            <div class = "row">
+                        <img src="img/PartB2_Fig5.jpg" alt="Overview" >
+                        <p><h4>Overview of the work breakdown structure of the RACE-GO project. Bottom right figure with image of HIP109427 B is taken from Steiger et al. 2021. Acronyms: PI-SLM = polarization independent spatial light modulator; eAPD = electron avalanche photo-diode; CDI = coherent differential imaging; GTO = guaranteed time observing.</h4></p>
+            </div>
         
         </div>
         </section>

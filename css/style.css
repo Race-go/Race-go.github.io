@@ -179,6 +179,10 @@ header  .navbar-nav > li > a {
     transition: all .3s ease;
 }
 
+.navbar-nav .nav-item{
+    margin-right: 35px; /* Adds spacing between buttons */
+	font-size: 25px;
+  }
 
 .dropdown-menu li a:hover {
     color: #fff !important;
@@ -454,7 +458,6 @@ color: #fff;
 .aboutUs h2, .aboutUs h4{
 color:#fff;
 line-height: 24px;
-margin-left: 20px;
 }
 .aboutUs p{
 	margin-left: 20px;
@@ -622,8 +625,7 @@ position: relative;
 margin: 0;
 padding: 0;
 /* color: #F58A2E; */
-background: #000000;  margin-top: 3px;  
-padding-top: 8px;
+background: #0a0a0a; 
 /* border: 1px solid #81C402; */
 }
 
