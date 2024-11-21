@@ -201,7 +201,14 @@ header .nav .caret {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color:  #fff;
-}	
+}
+
+.navbar-toggler-text {
+    display: inline-block;
+    margin-left: 8px; /* Adds space between the icon and the text */
+    font-size: 16px;   /* Adjust text size */
+    color: black;      /* Ensures text is visible on a dark navbar */
+  }
 	
 
 .dropdown-menu  {
