@@ -458,9 +458,9 @@ bottom: -30px;
 margin: auto;
 }
 .aboutUs{
-padding:100px 0 0 ;
-background: #0a0a0a;
-color: #fff;
+	background-color: #0a0a0a;
+	color: white; /* Ensure text is visible on dark background */
+	padding: 50px 0;
 }
 .aboutUs h2, .aboutUs h4{
 color:#fff;
@@ -476,15 +476,20 @@ line-height: 24px;
     margin-bottom: 100px;
 
 }
-.aboutUs img{
-	width: 100%;
-}
+.aboutUs .figure-img {
+	max-width: 100%; /* Ensure the image scales responsively */
+	height: auto;
+  }
 
-img.img-center {
-margin: 0 auto;
-display: block;
-max-width: 100%;
-}
+.aboutUs .figure-caption {
+	font-size: 20px; /* Increase font size for the caption */
+	color: #FFF;
+  }
+
+
+
+
+
 /* Testimonial
 ----------------------------------*/
 .testimonial-area {
@@ -690,6 +695,7 @@ text-transform: uppercase;
 }
 #events {
 padding: 40px 0 0;
+background-color: #000;
 }
  
 /* --- search form --- */
@@ -1422,6 +1428,7 @@ a.scrollup i:hover {
 
 .aligncenter{
 	text-align:center;
+	color: #FFF;
 }
 
 .aligncenter span{
@@ -1862,6 +1869,8 @@ li.active {
 		font-size:14px;
 	}
 
+
+	
 
 }
 
