@@ -1,4 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Race-Go</title>
+    <meta name="description" content="" />
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jcarousel.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/new_style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/news.css">
+    
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
+</head>
+<body>
+<div id="wrapper" class="home-page">
+	<!-- start header -->
+	<header>
+        
+        <div class="navbar navbar-default navbar-static-top" style ="background-image: url('img/header_bg.png'); height: 800px">
+            </div>
+            <!-- <div class="container" >  -->
+                <!-- <div class="navbar-header"> 
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-Bistro=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> -->
+                    <!-- <a><img src="img/WhiteBackground-RaceGo-Logo-Normal.jpg" alt="logo" href="index.html"/></a> -->
+                    <!-- <img src="img/DAG_Panorama 1_compressed.jpg" alt="Additional Image" style="width: 100%; height: auto; display: block;" /> -->
+                <!-- </div> --> 
+    <div class="navbar-collapse collapse " style = "background-color: #0a0a0a">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li> 
+                <li><a href="research.html">Research</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <!-- <li><a href="about.html">About Us</a></li> -->
+                <li><a href="people.html">People</a></li>
+            </ul>
+        </div>
+    </div>
+	</header>
+
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="pageTitle">News</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+        <div class="news-page">
+        
+            <!-- News Sections -->
+            <section class="news-section">
+                <h2>November 2024</h2>
+                <div class="news" id="November 2024"></div>
+            </section>
+
+            <section class="news-section">
+                <h2>September 2024</h2>
+                <div class="news" id="September 2024"></div>
+            </section>
+        
+            <section class="news-section">
+                <h2>March 2024</h2>
+                <div class="news" id="March 2024"></div>
+            </section>
+        
+            <!-- Modal for enlarged image -->
+            <div id="image-modal" class="modal">
+                <span class="close" id="close-modal">&times;</span>
+                <img class="modal-content" id="modal-image" alt="Enlarged photo">
+            </div>
+        
+            <script>
+                const sections = {
+                    "November 2024": [
+                        'album/News/November/DSC_0015.JPG',
+                        'album/News/November/DSC_0062.JPG',
+                        'album/News/November/DSC_0073.JPG',
+                        'album/News/November/DSC_0092.JPG',
+                        'album/News/November/IMG-20241121-WA0045.jpg'
+                        
+                    ],
+
+                    "September 2024": [
+                        'album/News/September/IMG-20240919-WA0001.jpg',
+                        'album/News/September/IMG-20240919-WA0002.jpg',
+                        'album/News/September/IMG-20240923-WA0052.jpg',
+                        'album/News/September/IMG-20240923-WA0062.jpg',
+                        'album/News/September/IMG-20240923-WA0063.jpg',
+                        'album/News/September/IMG-20240923-WA0076.jpg',
+                        'album/News/September/IMG-20241121-WA0054.jpg',
+                        'album/News/September/IMG-20241121-WA0061.jpg',
+                        'album/News/September/IMG-20241121-WA0062.jpg',
+                        'album/News/September/IMG-20241121-WA0063.jpg',
+                        'album/News/September/IMG-20241121-WA0100.jpg'
+                        
+                    ],
+
+                    "March 2024": [
+                        'album/News/March/DVCN9293.JPG',
+                        'album/News/March/IMG_4525.JPG',
+                        'album/News/March/IMG_4529.JPG',
+                        'album/News/March/IMG_4559.JPG',
+                        'album/News/March/IMG_4560.JPG',
+                        'album/News/March/IMG_4573.JPG',
+                        'album/News/March/IMG_4589.JPG',
+                        'album/News/March/IMG_4591.JPG',
+                        'album/News/March/IMG_4592.JPG',
+                        'album/News/March/IMG_4594.JPG',
+                        'album/News/March/KEGT1641.JPG'
+                        
+                    ]
+                };
+        
+                const modal = document.getElementById('image-modal');
+                const modalImage = document.getElementById('modal-image');
+                const closeModal = document.getElementById('close-modal');
+        
+                // Populate galleries
+                Object.keys(sections).forEach(sectionId => {
+                    const news = document.getElementById(sectionId);
+                    sections[sectionId].forEach(imageSrc => {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = imageSrc;
+                        imgElement.alt = "Photo";
+                        imgElement.classList.add('news-item');
+                        imgElement.addEventListener('click', () => {
+                            modal.style.display = 'flex';
+                            modalImage.src = imgElement.src;
+                        });
+                        news.appendChild(imgElement);
+                    });
+                });
+        
+                // Close modal
+                closeModal.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+        
+                // Close modal on outside click
+                window.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            </script>
+        </body>
+    </div>
+</body>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Our Contact</h5>
+					<address>
+					<strong>Dept. of Space and Planetary Sciences</strong><br>
+                    University of Bern<br>
+					Gesellschaftsstrasse 6<br>
+					 3012 Bern, Switzerland.</address>
+					<p>
+						<i class="icon-phone"></i> +41 316844765 <br>
+						<i class="icon-envelope-alt"></i> jonas.kuehn@unibe.ch
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Quick Links</h5>
+					<ul class="link-list">
+						<li><a href="#">Latest Events</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Recent News</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	 <div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Race-Go Group 2024 All right reserved.
+						</p>
+					</div>
+				</div> 
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+	</footer>
 </html>
