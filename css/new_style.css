@@ -8,3 +8,33 @@
     padding-right: 200px; /* Adjust this value as needed */
     padding-bottom: 30px; /* Adjust this value as needed */
 }
+
+.research {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.research h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.research h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.research .section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.research .section p {
+    margin-top: 10px;
+}
