@@ -15,6 +15,7 @@
     flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
     justify-content: center; /* Centers images within the gallery */
     gap: 20px; /* Adds spacing between images */
+    margin-top: 30px;
 }
 
 .news img {
@@ -60,4 +61,12 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+}
+
+.news-description {
+    font-size: 16px; /* Adjust as needed for readability */
+    color: #555; /* Subtle color for the description text */
+    margin: 20px auto; /* Space between the description and the gallery */
+    text-align: center; /* Aligns the text to the center */
+    max-width: 800px;
 }
