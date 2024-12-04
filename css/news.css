@@ -94,3 +94,34 @@
 .arrow:hover {
     color: #ddd;
 }
+
+/* Funding Section */
+.funding-section {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center align text and content */
+}
+
+/* Description Text Styling */
+.funding-section .news-description {
+    font-size: 18px; /* Slightly larger font for readability */
+    margin-bottom: 20px; /* Space between description and logos */
+}
+
+/* Logo Container Styling */
+.logo-container {
+    display: flex; /* Arrange logos in a row */
+    justify-content: center; /* Center logos horizontally */
+    flex-wrap: wrap; /* Allow logos to wrap if needed */
+    gap: 20px; /* Space between logos */
+}
+
+/* Logo Styling */
+.funding-logo {
+    max-width: 450px; /* Set maximum width for logos */
+    max-height: 300px; /* Set maximum height for logos */
+    object-fit: contain; /* Ensure logos maintain their aspect ratio */
+    border: none; /* Remove borders */
+    cursor: default; /* Disable pointer cursor (not clickable) */
+}
