@@ -1,0 +1,136 @@
+.ack-description {
+  font-size: 16px; /* Adjust as needed for readability */
+  color: #FFF; /* Subtle color for the description text */
+  margin: 20px auto; /*Space between the description and the gallery */
+  text-align: center; /* Aligns the text to the center */
+  max-width: 800px;
+  margin-top: 70px;
+}
+
+/* Funding Section */
+.funding-section {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  padding: 20px; /* Add padding for better spacing */
+  text-align: center; /* Center align text and content */
+}
+
+/* Description Text Styling */
+.funding-section .ack-description {
+  font-size: 18px; /* Slightly larger font for readability */
+  margin-bottom: 20px; /* Space between description and logos */
+}
+
+/* Logo Container Styling */
+.logo-container {
+  display: flex; /* Arrange logos in a row */
+  justify-content: center; /* Center logos horizontally */
+  flex-wrap: wrap; /* Allow logos to wrap if needed */
+  gap: 20px; /* Space between logos */
+}
+
+/* Logo Styling */
+.funding-logo {
+  max-width: 450px; /* Set maximum width for logos */
+  max-height: 300px; /* Set maximum height for logos */
+  object-fit: contain; /* Ensure logos maintain their aspect ratio */
+  border: none; /* Remove borders */
+  cursor: default; /* Disable pointer cursor (not clickable) */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Stacked logos container */
+.stacked-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the logos vertically */
+  gap: 10px; /* Space between the stacked logos */
+  margin-top: 60px; /* Space above the stacked container */
+  margin-bottom: 100px;
+}
+
+
+.stack {
+  max-width: 480px;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.HEIG-VD-logo {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.ATASAM-logo {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.DAG-logo {
+  max-width: 600px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.unique-logo {
+  max-width: 700px; /* Custom width for this image */
+  max-height: 500px; /* Custom height for this image */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.contractor-logo {
+  max-width: 450px; /* Set maximum width for logos */
+  max-height: 300px; /* Set maximum height for logos */
+  object-fit: contain; /* Ensure logos maintain their aspect ratio */
+  border: none; /* Remove borders */
+  cursor: default; /* Disable pointer cursor (not clickable) */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Reset anchor tag vertical alignment */
+a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle; /* Prevent vertical misalignment */
+}
+
+/* Ensure images inside links scale correctly */
+a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;  /* Ensure vertical alignment of the image */
+}
+
+/* Prevent image from shifting on hover */
+a:hover img {
+  transform: scale(1.05);  /* Slight scale effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+  cursor: pointer;
+}
+
+/* Wrapper around the image to preserve spacing */
+.logo-container a {
+  display: inline-block;
+  padding: 0; /* Reset any padding that might affect positioning */
+  margin: 0;  /* Prevent any margin affecting layout */
+}
+
+/* Add a tiny gap between images if needed */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
