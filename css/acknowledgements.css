@@ -110,7 +110,6 @@ a img {
   transition: all 0.3s ease;
   margin: 0;
   padding: 0;
-  vertical-align: middle;  /* Ensure vertical alignment of the image */
 }
 
 /* Prevent image from shifting on hover */
