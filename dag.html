@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
 <title>Race-Go</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -15,7 +13,7 @@
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/dag.css">
  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -26,53 +24,46 @@
 
   <body>
   <!-- Header Section -->
-  <header class="bg-light">
-    <div class="container-fluid" style="background-color: #0a0a0a;">
-      <div class="row align-items-center py-3">
-        <!-- Image -->
-        <div class="col-12 text-center">
-          <img src="img/header_bg.png" alt="Website Header" class="img-fluid" style= "width: 100%; height: auto">
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a0a0a;">
-        <div class="container-fluid">
-      
+  <div class="header-space">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+      <div class="container-fluid">
           <!-- Toggle Button for Mobile -->
           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-text">Menu</span> <!-- Optional text for clarity -->
+              <span class="navbar-toggler-icon"></span>
           </button>
-      
           <!-- Collapsible Menu -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item me-3">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="research.html">Research</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="dag.html">The DAG observatory</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="people.html">People</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="acknowledgements.html">Acknowledgements</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav">
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="research.html">Research</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="dag.html">The DAG observatory</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="people.html">People</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link" href="acknowledgements.html">Acknowledgements</a>
+                  </li>
+              </ul>
           </div>
-        </div>
-      </nav>
-  </header>
+      </div>
+  </nav>
+    <a class="overlapping-image" href="https://race-go.github.io/" target="_blank">
+    <img src="album/Header/LightBackground-RaceGo-Logo-Normal.png" alt="Overlapping Image" class="overlapping-image">
+    </a>
+  </div>
+
     
 
 </head>
@@ -91,26 +82,26 @@
 
 
     
-        <div class="news-page">
+        <div class="dag-page">
         
-            <!-- News Sections -->
-            <section class="news-section">
+            <!-- DAG Sections -->
+            <section class="dag-section">
               <h2 class="fw-bold" style="font-size: 2.5rem;">
                 The Observatory
               </h2>
-                <p class="news-description">The Doğu Anadolu Gözlemevi (Eastern Anatolia Observatory, abbreviated as DAG) is the new Turkish national observatory, located on the Karakaya Ridge close to the city of Erzurum at an elevation of 3170 m above sea level.</p>
-                <div class="news" id="Observatory"></div>
-                <p class="news-description">
+                <p class="dag-description">The Doğu Anadolu Gözlemevi (Eastern Anatolia Observatory, abbreviated as DAG) is the new Turkish national observatory, located on the Karakaya Ridge close to the city of Erzurum at an elevation of 3170 m above sea level.</p>
+                <div class="dag" id="Observatory"></div>
+                <p class="dag-description">
                   A clear nights ratio of 260/365 and a median seeing of 0.9" provides promising conditions for observations with the PLACID coronagraph (see plot for on-site measurements).
                 </p>
             </section>
             
-            <section class="news-section">
+            <section class="dag-section">
               <h2 class="fw-bold" style="font-size: 2.5rem;">
                 The Telescope
               </h2>
-                <p class="news-description">The telescope of the observatory has a primary mirror of 4m in diameter, collecting all the light required for the PLACID instrument, which will be installed at the diffraction limited Nasmyth platform. This means it will be located downstream of the telescope's extreme adaptive optics system (XAO), called TROIA.</p>
-                <div class="news" id="Telescope"></div>
+                <p class="dag-description">The telescope of the observatory has a primary mirror of 4m in diameter, collecting all the light required for the PLACID instrument, which will be installed at the diffraction limited Nasmyth platform. This means it will be located downstream of the telescope's extreme adaptive optics system (XAO), called TROIA.</p>
+                <div class="dag" id="Telescope"></div>
             </section>
             <!-- Modal for enlarged image -->
             <div id="image-modal" class="modal">
@@ -121,6 +112,33 @@
                 <!-- Right Arrow -->
                <div class="arrow right-arrow" id="right-arrow">&#10095;</div>
             </div>
+
+            <section class="dag-section">
+              <h2 class="fw-bold" style="font-size: 2.5rem;">
+                Partners
+              </h2>
+              <div class="logo-container2">
+                <a href="https://heig-vd.ch/" target="_blank">
+                  <img src="album/DAG/HEIG-VD.png" alt="Logo 6" class="HEIG-VD-logo">
+                </a>
+              </div>
+
+              <div class="logo-container3">
+                <a href="https://atasam.atauni.edu.tr/" target="_blank">
+                  <img src="album/DAG/atasamlogo.png" alt="Logo 7" class="ATASAM-logo">
+                </a>
+                <a href="https://atasam.atauni.edu.tr/" target="_blank">
+                  <img src="album/DAG/DAG_LOGO_UZUN.png" alt="Logo 8" class="DAG-logo">
+                </a>
+              </div>
+  
+              <div class="logo-container4">
+                <img src="album/DAG/Amos-Logo Bleu-sans bords.png" alt="Logo 9" class="contractor-logo">
+                <img src="album/DAG/logonew.jpg" alt="Logo 10" class="contractor-logo">
+              </div>
+            </section>
+
+            <p class="ack-description">The project has been realized thanks to and in close collaboration with HEIG-VD in Yverdon-les-Bains, Switzerland and the ATASAM institute at Atatürk University, Erzurum, Turkey. AMOS and EIE are the contractors responsible for the construction of the observatory and the telescope.</p>
         
             <script>
                 const sections = {
@@ -154,18 +172,18 @@
         
                 // Populate galleries
     Object.keys(sections).forEach(sectionId => {
-        const news = document.getElementById(sectionId);
+        const dag = document.getElementById(sectionId);
         sections[sectionId].forEach((imageSrc, index) => {
             const imgElement = document.createElement('img');
             imgElement.src = imageSrc;
             imgElement.alt = "Photo";
-            imgElement.classList.add('news-item');
+            imgElement.classList.add('dag-item');
             imgElement.addEventListener('click', () => {
                 currentGallery = sections[sectionId];
                 currentIndex = index;
                 openModal();
             });
-            news.appendChild(imgElement);
+            dag.appendChild(imgElement);
         });
     });
 

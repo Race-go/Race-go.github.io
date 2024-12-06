@@ -25,8 +25,17 @@
 .logo-container {
   display: flex; /* Arrange logos in a row */
   justify-content: center; /* Center logos horizontally */
+  align-items: center; /* Center vertically */
   flex-wrap: wrap; /* Allow logos to wrap if needed */
   gap: 20px; /* Space between logos */
+}
+
+/* Wrapper around the image to preserve spacing */
+.logo-container a {
+  display: inline-block;
+  padding: 0; /* Reset any padding that might affect positioning */
+  margin: 0;  /* Prevent any margin affecting layout */
+  vertical-align: middle;
 }
 
 /* Logo Styling */
@@ -36,7 +45,6 @@
   object-fit: contain; /* Ensure logos maintain their aspect ratio */
   border: none; /* Remove borders */
   cursor: default; /* Disable pointer cursor (not clickable) */
-  margin-top: 10px;
   margin-bottom: 25px;
 }
 
@@ -57,24 +65,6 @@
   object-fit: contain;
 }
 
-.HEIG-VD-logo {
-  max-width: 200px;
-  max-height: 200px;
-  object-fit: contain;
-}
-
-.ATASAM-logo {
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
-}
-
-.DAG-logo {
-  max-width: 600px;
-  max-height: 500px;
-  object-fit: contain;
-}
-
 .unique-logo {
   max-width: 700px; /* Custom width for this image */
   max-height: 500px; /* Custom height for this image */
@@ -83,16 +73,6 @@
 img {
   width: 100%;
   height: auto;
-}
-
-.contractor-logo {
-  max-width: 450px; /* Set maximum width for logos */
-  max-height: 300px; /* Set maximum height for logos */
-  object-fit: contain; /* Ensure logos maintain their aspect ratio */
-  border: none; /* Remove borders */
-  cursor: default; /* Disable pointer cursor (not clickable) */
-  margin-top: 10px;
-  margin-bottom: 25px;
 }
 
 /* Reset anchor tag vertical alignment */
@@ -112,24 +92,96 @@ a img {
   padding: 0;
 }
 
-/* Prevent image from shifting on hover */
+/* Default hover effect for images inside links */
 a:hover img {
   transform: scale(1.05);  /* Slight scale effect */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
   cursor: pointer;
 }
 
-/* Wrapper around the image to preserve spacing */
-.logo-container a {
-  display: inline-block;
-  padding: 0; /* Reset any padding that might affect positioning */
-  margin: 0;  /* Prevent any margin affecting layout */
+/* On hover, only scale the overlapping image without affecting other images */
+a.overlapping-image:hover .overlapping-image {
+  transform: translateX(-50%) scale(1.05); /* Ensure only the overlapping image scales */
 }
 
-/* Add a tiny gap between images if needed */
-.logo-container {
-  display: flex;
+/*section for the new header*/
+
+.header-space {
+  height: 250px; /* Adjust height as needed */
+  background-color: #002969; /* Replace with your desired color */
+  position: relative; /* Set relative positioning for the space */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers the images */
+  flex-direction: column;
+  justify-content: space-between; /* Adds space between elements (if needed) */
+}
+
+.left-images {
+  display: flex; /* Enables horizontal alignment */
+  gap: 10px; /* Adds space between the images */
+  position: absolute; /* Allows precise positioning */
+  bottom: 10px; /* Aligns the images at the bottom of the colored space */
+  left: 10px; /* Ensures images are on the left side */
+  padding: 10px; /* Optional padding for spacing */
+}
+
+.small-image {
+  width: 175px; /* Adjust image size as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the whole image fits within the bounds */
+  margin-right: 10px;
+}
+
+.small-image2 {
+  width: 250px; /* Adjust image size as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the whole image fits within the bounds */
+  margin-right: 10px;
+}
+
+
+.overlapping-image {
+  position: absolute;
+  bottom: -50px; /* Adjust to control the overlap amount */
+  left: 70%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Ensure the image is perfectly centered */
+  width: 700px; /* Adjust the size as needed */
+  z-index: 10; /* Ensure it appears above other elements */
+  transition: transform 0.3s ease;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 100%; /* Expand to fit the width */
+  text-align: center;
+}
+
+.navbar-nav {
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-space {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .overlapping-image {
+    width: 80vw; /* Adjust image size for smaller screens */
+    bottom: 5%; /* Adjust position to fit better */
+  }
+
+  .left-images img {
+    width: 40vw; /* Make small images larger on small screens */
+  }
+}
+
+/* Media query for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+  .left-images img {
+    width: 50vw; /* Make images take up more width on very small screens */
+  }
+
+  .overlapping-image {
+    width: 90vw; /* Make the overlapping image almost full-width */
+  }
 }

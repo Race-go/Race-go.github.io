@@ -1,0 +1,254 @@
+.dag-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Centers text within each section */
+}
+
+.dag-section {
+  width: 100%; /* Adjust width as needed */
+  margin: 20px auto; /* Adds spacing between sections */
+}
+
+.dag {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+  justify-content: center; /* Centers images within the gallery */
+  gap: 20px; /* Adds spacing between images */
+  margin-top: 30px;
+}
+
+.dag img {
+  max-width: 400px; /* Controls the maximum width of images */
+  max-height: 400px; /* Controls the maximum height of images */
+  object-fit: cover; /* Ensures images maintain aspect ratio and fit in the box */
+  cursor: pointer; /* Makes the images clickable */
+  border: 2px solid #ccc; /* Optional border for styling */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.dag img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Ensures images maintain aspect ratio in modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for style */
+  display: block; /* Ensures the image is treated as a block for centering */
+  margin: auto; /* Centers the image in the modal */
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.dag-description {
+  font-size: 16px; /* Adjust as needed for readability */
+  color: #555; /* Subtle color for the description text */
+  margin: 20px auto; /* Space between the description and the gallery */
+  text-align: center; /* Aligns the text to the center */
+  max-width: 800px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: #ddd;
+}
+
+.HEIG-VD-logo {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  margin-top: 50px;
+}
+
+.ATASAM-logo {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.DAG-logo {
+  max-width: 600px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.contractor-logo {
+  max-width: 450px; /* Set maximum width for logos */
+  max-height: 300px; /* Set maximum height for logos */
+  object-fit: contain; /* Ensure logos maintain their aspect ratio */
+  border: none; /* Remove borders */
+  cursor: default; /* Disable pointer cursor (not clickable) */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Logo Container Styling */
+.logo-container {
+  display: flex; /* Arrange logos in a row */
+  justify-content: center; /* Center logos horizontally */
+  flex-wrap: wrap; /* Allow logos to wrap if needed */
+  gap: 20px; /* Space between logos */
+}
+
+/* Wrapper around the image to preserve spacing */
+.logo-container a {
+  display: inline-block;
+  padding: 0; /* Reset any padding that might affect positioning */
+  margin: 0;  /* Prevent any margin affecting layout */
+}
+
+/* Reset anchor tag vertical alignment */
+a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle; /* Prevent vertical misalignment */
+}
+
+/* Ensure images inside links scale correctly */
+a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default hover effect for images inside links */
+a:hover img {
+  transform: scale(1.05);  /* Slight scale effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+  cursor: pointer;
+}
+
+/* On hover, only scale the overlapping image without affecting other images */
+a.overlapping-image:hover .overlapping-image {
+  transform: translateX(-50%) scale(1.05); /* Ensure only the overlapping image scales */
+}
+
+
+
+/*section for the new header*/
+
+.header-space {
+  height: 350px; /* Adjust height as needed */
+  background-color: #002969; /* Replace with your desired color */
+  position: relative; /* Set relative positioning for the space */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers the images */
+  flex-direction: column;
+  justify-content: space-between; /* Adds space between elements (if needed) */
+  padding-bottom: 400px;
+}
+
+.left-images {
+  display: flex; /* Enables horizontal alignment */
+  gap: 10px; /* Adds space between the images */
+  position: absolute; /* Allows precise positioning */
+  bottom: 10px; /* Aligns the images at the bottom of the colored space */
+  left: 10px; /* Ensures images are on the left side */
+  padding: 10px; /* Optional padding for spacing */
+}
+
+.small-image {
+  width: 175px; /* Adjust image size as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the whole image fits within the bounds */
+  margin-right: 10px;
+}
+
+.small-image2 {
+  width: 250px; /* Adjust image size as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the whole image fits within the bounds */
+  margin-right: 10px;
+}
+
+
+.overlapping-image {
+  position: relative;
+  bottom: 0px; /* Adjust to control the overlap amount */
+  left: 46.9%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Ensure the image is perfectly centered */
+  width: 700px; /* Adjust the size as needed */
+  z-index: 10; /* Ensure it appears above other elements */
+  transition: transform 0.3s ease;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 100%; /* Expand to fit the width */
+  text-align: center;
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .header-space {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .overlapping-image {
+    width: 80vw; /* Adjust image size for smaller screens */
+    bottom: 5%; /* Adjust position to fit better */
+  }
+
+  .left-images img {
+    width: 40vw; /* Make small images larger on small screens */
+  }
+}
+
+/* Media query for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+  .left-images img {
+    width: 50vw; /* Make images take up more width on very small screens */
+  }
+
+  .overlapping-image {
+    width: 90vw; /* Make the overlapping image almost full-width */
+  }
+}
