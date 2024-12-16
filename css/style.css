@@ -588,7 +588,8 @@ section.txt-area {
 
 #content {
 	position:relative;
-	background:#fff;
+	background:#0a0a0a;
+	color: white
 	padding: 30px 0 0px 0;
 }
 
@@ -1224,12 +1225,12 @@ color:#3b0202;
 list-style: none;
 padding: 15px 0 15px 0;
 margin: 0 0 0 0;
-color: #222;
+color: #ffffff;
 }
 
 .pricing-action{
 	margin:0;
-	background: #fcfcfc;
+	background: #0a0a0a;
 	text-align:center;
 	padding:20px 0 30px 0;
 }
