@@ -1,3 +1,39 @@
+.header_bg {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Avoid horizontal scrolling unless absolutely necessary */
+  margin: 0;
+  padding: 0;
+}
+
+
+h2.pageTitle {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Dynamically adjust the font size */
+  line-height: 1.2;                   /* Ensure spacing between lines */
+  text-align: center;                 /* Center-align the title */
+  margin: 0 auto;                     /* Center the title horizontally */
+  padding: 10px;                      /* Add padding for spacing */
+  word-break: keep-all;               /* Prevent breaking words unnecessarily */
+  overflow-wrap: anywhere;            /* Allow breaks in long words if needed */
+}
+
+#inner-headline {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center title horizontally */
+  align-items: center; /* Center title vertically */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  padding: 20px; /* Add padding for spacing */
+  width: 100%; /* Full-width container */
+  min-height: auto;           /* Let the height adjust dynamically */
+  box-sizing: border-box;     /* Include padding in width/height calculations */
+  overflow: visible;          /* Prevent clipping of overflowing content */
+  max-height: 100vh; /* Ensure the title doesn't exceed the visible height */
+}
+
 .ack-page {
   display: flex;
   flex-direction: column;
@@ -5,11 +41,14 @@
   text-align: center;
   background-color: #0a0a0a;
   padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the width */
 }
 
 .ack-section {
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto; /* Center section dynamically */
+  width: 90%; /* Adjust based on screen size */
   background-color: #0a0a0a;
 }
 
@@ -36,7 +75,7 @@
 }
 
 .ack-description {
-  font-size: 16px;
+  font-size: 2rem;
   color: #FFF;
   margin: 0 auto;
   max-width: 800px;
@@ -46,7 +85,8 @@
 
 /* Logo Containers */
 .logo-container {
-  display: inline-flex;              /* Shrinks to fit the child elements */
+  display: flex;              /* Shrinks to fit the child elements */
+  flex-wrap: wrap;
   justify-content: center;           /* Horizontally center logos */
   align-items: center;               /* Vertically center logos */
   gap: 20px;                         /* Space between logos */
@@ -81,13 +121,48 @@
   margin: 0 auto;            /* Remove any margin on the image */
   padding: 0;                /* Remove any padding on the image */
   max-width: 100%;           /* Allow logos to scale down */
+  height: auto;
   object-fit: contain;       /* Maintain aspect ratio */
   width: auto;               /* Allow the width to adjust based on image aspect ratio */
+}
+
+
+.logo-container2 img {
+  max-width: 100%; /* Ensures the image scales down with the container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Avoids inline spacing issues */
+}
+
+.logo-container,
+.logo-container2 {
+  display: flex; /* Align child elements flexibly */
+  flex-wrap: wrap; /* Allow images to wrap within the container */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  gap: 10px; /* Space between images */
+  width: 100%; /* Let the container span the full width */
+  max-width: 100%; /* Prevent the container from exceeding screen width */
+  overflow: hidden; /* Prevent overflow issues */
 }
 
 .funding-logo {
   max-width: 600px;
   max-height: 450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  cursor: default;
+  margin: 0; /* Remove margins around the logos */
+  padding: 0; /* Remove padding if any */
+  display: block; /* Ensures logos are block level, preventing inline issues */
+}
+
+.bern-logo {
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
   border: none;
   cursor: default;
@@ -107,6 +182,8 @@
 .stack {
   max-width: 480px;
   max-height: 320px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
   display: block;
   margin: auto; /* Centers the image horizontally */
@@ -133,30 +210,26 @@ a:hover img {
 }
 
 img[alt="Logo 1"] {
-  max-width: 500px;                   /* Limit width */
-  max-height: 500px;                  /* Limit height for square logos */
+  max-width: 300px;                   /* Limit width */
+  max-height: 300px;                  /* Limit height for square logos */
 }
 
 /* Logo 2 (Long) - Adjust size for long logos */
 img[alt="Logo 2"] {
-  max-width: 1000px;                   /* Limit width for long logos */
-  max-height: 300px;                  /* Limit height to avoid excessive height */
+  max-width: 800px;                   /* Limit width for long logos */
+  max-height: 200px;                  /* Limit height to avoid excessive height */
 }
 
 
 /* Optional: Fixing issues with specific logos if needed */
-img[alt="Logo 1"] {
-  max-width: 300px; /* Adjust the size if necessary */
-  margin-top: 0; /* Remove any unwanted top margin */
-  margin-left: auto;         /* Ensure it's centered in the container */
-  margin-right: auto;
-}
 
-img[alt="Logo 2"] {
-  max-width: 700px; /* Adjust the size if necessary */
-  margin-top: 0; /* Remove any unwanted top margin */
-  margin-left: auto;         /* Ensure it's centered in the container */
-  margin-right: auto;
+
+img[alt="Logo 2"],
+img[alt="Logo 1"] {
+  max-width: 90%; /* Adjust to fit within the viewport */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the images */
+  display: block;
 }
 
 img[alt="Logo 3"] {
@@ -174,5 +247,44 @@ img[alt="Logo 5"] {
 img[alt="Logo 2"] {
   margin: auto;
   display: block;
-  vertical-align: middle; /* Ensures it aligns vertically */
+}
+
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .col-lg-3 {
+    margin-bottom: 15px;
+  }
+
+  .ack-page {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .logo-container img,
+  .stacked-logos img {
+    max-width: 80%; /* Further reduce size for smaller devices */
+  }
+
+  h2.pageTitle {
+    font-size: 2rem; /* Smaller font size for tablets and phones */
+  }
+}
+
+@media (max-width: 480px) {
+  h2.pageTitle {
+    font-size: 1.8rem; /* Even smaller font size for very small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  h2.pageTitle {
+    font-size: 1rem; /* Reduce font size for extremely small screens/zooms */
+    padding: 5px;    /* Adjust padding */
+  }
+
+  #inner-headline {
+    padding: 10px;   /* Ensure enough space around the title */
+  }
 }
