@@ -84,10 +84,10 @@
               <h2 class="fw-bold" style="font-size: 2.5rem;">
                 The Observatory
               </h2>
-                <p class="dag-description">The Doğu Anadolu Gözlemevi (Eastern Anatolia Observatory, abbreviated as DAG) is the new Turkish national observatory, located on the Karakaya Ridge close to the city of Erzurum at an elevation of 3170 m above sea level.</p>
+              <p class="dag-description">The Doğu Anadolu Gözlemevi (Eastern Anatolia Observatory, abbreviated as DAG) is the new national observatory of Turkey, located on the Karakaya Ridge at an elevation of 3170 m above sea level, near the city of Erzurum.</p>
                 <div class="dag" id="Observatory"></div>
                 <p class="dag-description">
-                  A clear nights ratio of 260/365 and a median seeing of 0.9" provides promising conditions for observations with the PLACID coronagraph (see plot for on-site measurements).
+                  Past measured clear nights ratio of 260/365 and a median seeing of 0.9" shall promise great observing conditions for direct imaging of exoplanets, with our PLACID "adaptive" high-contrast instrument (see plot for previous on-site characterization measurements).
                 </p>
             </section>
             
@@ -95,9 +95,21 @@
               <h2 class="fw-bold" style="font-size: 2.5rem;">
                 The Telescope
               </h2>
-                <p class="dag-description">The telescope of the observatory has a primary mirror of 4m in diameter, collecting all the light required for the PLACID instrument, which will be installed at the diffraction limited Nasmyth platform. This means it will be located downstream of the telescope's extreme adaptive optics system (XAO), called TROIA.</p>
+              <p class="dag-description">The DAG telescope is based on a Alt-Az Ritchey-Chrétien architecture, fielding an actively-controlled primary mirror (M1) of 4-m and a secondary mirror (M2) of 1-m in size, with a third mirror (M3) feeding either one of the two gravity-invarient Nasymth platforms available: a seeing-limited platform (to be used for spectroscopy) and a diffraction-limited platform encompassing an in-flange derotator (KORAY, developped by HEIG-VD), an extreme adaptive-optics system (TROIA, developped by HEIG-VD) and a state-of-the-art near-infrared HAWAII-1RG detector (DIRAC, developed by AAO/MacQuarrie University of Sydney): this is where we will install our PLACID exoplanet imager instrument, right in-between the TROIA XAO and the DIRAC camera.</p>
                 <div class="dag" id="Telescope"></div>
             </section>
+            
+            <section class="dag-section">
+              <h2 class="fw-bold" style="font-size: 2.5rem;">
+                The PLACID "adaptive" exoplanet imaging instrument
+              </h2>
+                <p class="dag-description">The Programmable Liquid-crystal Active Coronagraphic Imager for the DAG telescope (PLACID) instrument is a novel high-contrast direct imaging facility that will come online later this year. In a nutshell, PLACID will consist in a fore-optics coronagraphic intermediate stage platform, located downstream the TROIA XAO system and upstream of the DIRAC HAWAII-2RG focal-plane array.</p>
+                <p class="dag-description">The PLACID project is led by a consortium of Swiss Universities (University of Bern + HEIG-VD University of Applied Sciences) contracted by the Atatürk University Astrophysics Research and Application Center (ATASAM).</p>
+                <p class="dag-description">In practice, PLACID will be the world's first ever “active coronagraph” facility, fielding a customized spatial light modulator (SLM) acting as a dynamically programmable focal-plane phase mask (FPM) coronagraph from H- to Ks-band (1.6 to 2.2 um). This will provide a wealth of novel options to the observers, among which software-only abilities to change or re-align the coronagraphic FPM pattern in function of conditions or science requirements, free of any actuator motion. Future capabilities will include non-common path aberrations (NCPA) self-calibration, optimized coronagraphy for binaries or multiple stars, as well as coherent differential imaging (CDI). As such, the PLACID facility will be a platform of choice for international collaborations and prototyping of new concepts, with anticipated very positive impact for the nascent Turkish astronomy community.</p>
+                <div class="dag" id="PLACID"></div>
+            </section>
+
+
             <!-- Modal for enlarged image -->
             <div id="image-modal" class="modal">
                 <span class="close" id="close-modal">&times;</span>
@@ -110,7 +122,7 @@
 
             <section class="dag-section">
               <h2 class="fw-bold" style="font-size: 2.5rem;">
-                Partners
+                Partners:
               </h2>
               <div class="logo-container2">
                 <a href="https://heig-vd.ch/" target="_blank">
@@ -126,14 +138,20 @@
                   <img src="album/DAG/DAG_LOGO_UZUN.png" alt="Logo 8" class="DAG-logo">
                 </a>
               </div>
-  
+            </section>
+
+            <section class="dag-section">
+              <h2 class="fw-bold" style="font-size: 2.5rem;">
+                DAG Telescope main contractors:
+              </h2>
               <div class="logo-container4">
                 <img src="album/DAG/Amos-Logo Bleu-sans bords.png" alt="Logo 9" class="contractor-logo">
                 <img src="album/DAG/logonew.jpg" alt="Logo 10" class="contractor-logo">
               </div>
             </section>
 
-            <p class="dag-description">The project has been realized thanks to and in close collaboration with HEIG-VD in Yverdon-les-Bains, Switzerland and the ATASAM institute at Atatürk University, Erzurum, Turkey. AMOS and EIE are the contractors responsible for the construction of the observatory and the telescope.</p>
+            <p class="dag-description">The project has been realized thanks to and in close collaboration with HEIG-VD in Yverdon-les-Bains, Switzerland and the Turkish National Observatories (formerly known as the ATASAM institute at Atatürk University), Erzurum, Turkey.</p>
+            <p class="dag-description">AMOS and EIE are the contractors responsible for the construction of the observatory and the telescope.</p>
         
             <script>
                 const sections = {
@@ -152,7 +170,15 @@
                         'album/DAG/IMG-20241121-WA0063.jpg',
                         'album/DAG/IMG-20240923-WA0052.jpg',
                         'album/DAG/IMG-20241121-WA0062.jpg',
-                        'album/News/November/IMG-20241121-WA0045.jpg',
+                        'album/News/November2024/IMG-20241121-WA0045.jpg',
+                    ],
+
+                    "PLACID": [
+                        'album/DAG/PLACID1.png',
+                        'album/DAG/PLACID2.jpg',
+                        'album/DAG/PLACID3.jpg',
+                        'album/DAG/IMG_3768.JPG',
+                        'album/DAG/_DSC6909.JPG'
                     ]
                 };
         
