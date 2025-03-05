@@ -1,3 +1,108 @@
+.header-space {
+  height: auto; /* Adjust height as needed */
+  background-color: #002969; /* Background color */
+  position: relative; /* Set relative positioning for the space */
+  margin: 0;
+  padding: 10px 0;
+  padding-bottom: 80px;
+}
+
+.header-space .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title-section {
+  margin-top: 20px; /* Adjust spacing above the title */
+
+}
+
+.page-title-section h1 {
+  font-size: 2.5rem; /* Adjust the title font size */
+  font-weight: bold;
+}
+
+.pageTitle {
+  text-align: left !important;
+}
+
+.navbar {
+  background-color: #002969; /* Set menu bar background */
+}
+
+.navbar .nav-link {
+  color: white; /* Default tab text color */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link:focus {
+  color: #FFD700; /* Highlight color for hover/focus */
+}
+
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: #FFD700; /* Active tab color */
+  border-bottom: 2px solid #FFD700; /* Add an underline for the active tab */
+}
+
+.navbar-toggler {
+  background-color: #FFD700; /* Highlight toggle button */
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-fluid img {
+  max-height: 700px; /* Limit image height */
+  object-fit: cover; /* Crop image to fit if needed */
+}
+
+.container-fluid {
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+.left-logos {
+  display: flex;
+  gap: 10px; /* Space between left logos */
+  flex: 1;
+}
+
+.left-logos img {
+  max-width: 700px; /* Default size for all left logos */
+  height: auto;     /* Maintain aspect ratio */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Avoid horizontal scrolling unless absolutely necessary */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#content {
+  flex: 1;
+}
+
+.full-width-image {
+  width: 100%; /* Ensure the image spans the full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image doesn't distort */
+}
+
 .dag-page {
   display: flex;
   flex-direction: column;
@@ -7,7 +112,7 @@
 
 .dag-section {
   width: 90%; /* Adjust width as needed */
-  margin: 20px auto; /* Adds spacing between sections */
+  margin: 60px auto; /* Adds spacing between sections */
 }
 
 .dag {
@@ -53,6 +158,7 @@
   display: block; /* Ensures the image is treated as a block for centering */
   margin: auto; /* Centers the image in the modal */
 }
+
 .close {
   position: absolute;
   top: 20px;
@@ -168,21 +274,6 @@ a.overlapping-image:hover .overlapping-image {
   transform: translateX(-50%) scale(1.05); /* Ensure only the overlapping image scales */
 }
 
-
-
-/*section for the new header*/
-
-.header-space {
-  height: 350px; /* Adjust height as needed */
-  background-color: #002969; /* Replace with your desired color */
-  position: relative; /* Set relative positioning for the space */
-  display: flex; /* Enables flexbox layout */
-  align-items: center; /* Vertically centers the images */
-  flex-direction: column;
-  justify-content: space-between; /* Adds space between elements (if needed) */
-  padding-bottom: 400px;
-}
-
 .left-images {
   display: flex; /* Enables horizontal alignment */
   gap: 10px; /* Adds space between the images */
@@ -217,14 +308,66 @@ a.overlapping-image:hover .overlapping-image {
   transition: transform 0.3s ease;
 }
 
-.navbar {
-  margin: 0 auto;
-  width: 100%; /* Expand to fit the width */
-  text-align: center;
+.right-image {
+  max-height: 250px !important; /* Slightly larger than left logos */
+  width: auto; /* Adjust to match the desired size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-right: 30px;
 }
 
-.navbar-nav {
-  justify-content: center;
+.sponsor-logo {
+  max-width: 100%; /* Allow the image to scale within its container */
+  width: 700px; /* Set a specific width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits without distortion */
+}
+
+.footer-images img, .stack-images img {
+  display: block; /* Ensures images stack properly */
+  object-fit: contain; /* Prevents stretching */
+}
+
+/* Adjust individual images */
+.footer-logo {
+  width: auto; /* Adjust to fit within available space */
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-logo2 {
+  width: auto;
+  max-width: 125px;
+  height: auto;
+}
+
+.footer-logo3 {
+  width: auto;
+  max-width: 312px;
+  height: auto;
+}
+
+.stack-logo {
+  width: auto;
+  max-width: 188px;
+  height: auto;
+  margin-left: 50px;
+}
+
+.stack-images {
+  display: flex;
+  flex-direction: column; /* Stack images */
+  align-items: center; /* Align logos in the center */
+  gap: 10px; /* Space between stacked images */
+}
+
+/* General alignment settings */
+.footer-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /* Stack logos within each group */
+  align-items: center; /* Center logos */
+  gap: 15px; /* Space between logos */
 }
 
 @media (max-width: 768px) {
