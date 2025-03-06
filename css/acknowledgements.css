@@ -29,6 +29,7 @@
 }
 
 .pageTitle {
+  font-size: 2.5vw !important;
   text-align: center !important;
 }
 
@@ -173,7 +174,7 @@ h2.pageTitle {
 }
 
 .ack-description {
-  font-size: 2rem;
+  font-size: 1.25vw;
   color: #FFF;
   margin: 0 auto;
   max-width: 800px;
@@ -244,8 +245,8 @@ h2.pageTitle {
 }
 
 .funding-logo {
-  max-width: 600px;
-  max-height: 450px;
+  max-width: 18vw !important;
+  max-height: 15vw !important;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -257,8 +258,8 @@ h2.pageTitle {
 }
 
 .bern-logo {
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 20vw;
+  max-height: 15vw;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -294,8 +295,8 @@ h2.pageTitle {
 }
 
 .stack {
-  max-width: 480px;
-  max-height: 320px;
+  max-width: 24vw;
+  max-height: 16vw;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -305,8 +306,8 @@ h2.pageTitle {
 }
 
 .unique-logo {
-  max-width: 1000px;
-  max-height: 800px;
+  max-width: 40vw !important;
+  max-height: 32vw !important;
   margin: 0 10px;
 }
 
@@ -375,11 +376,6 @@ img[alt="Logo 2"] {
 
   .ack-page {
     padding: 10px; /* Reduce padding on smaller screens */
-  }
-
-  .logo-container img,
-  .stacked-logos img {
-    max-width: 80%; /* Further reduce size for smaller devices */
   }
 
   h2.pageTitle {

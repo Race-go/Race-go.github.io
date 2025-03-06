@@ -24,7 +24,8 @@
 }
 
 .pageTitle {
-  text-align: left !important;
+  font-size: 2.5vw !important;
+  text-align: center !important;
 }
 
 .navbar {
@@ -169,11 +170,18 @@ body {
   cursor: pointer;
 }
 
+.text-title {
+  font-size: 2vw; 
+  text-align: center; 
+  margin-bottom: 1vw; 
+  font-weight: bold;
+}
+
 .dag-description {
-  font-size: 16px; /* Adjust as needed for readability */
+  font-size: 1vw; /* Adjust as needed for readability */
   color: #555; /* Subtle color for the description text */
   margin: 20px auto; /* Space between the description and the gallery */
-  text-align: center; /* Aligns the text to the center */
+  text-align: justify; /* Aligns the text to the center */
   max-width: 800px;
 }
 

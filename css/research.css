@@ -186,18 +186,18 @@ a:hover img {
 }
 
 .text-title {
-  font-size: 2vw !important; 
+  font-size: 1.5vw; 
   text-align: center; 
-  margin-bottom: 3rem !important; 
+  margin-bottom: 20px; 
   font-weight: bold;
 }
 
 .text-format {
-  font-size: 1.25vw !important; 
+  font-size: 1vw; 
   line-height: 1.6; 
-  text-align: center;
-  margin-bottom: 2rem;
+  text-align: justify;
 }
+
 
 @media (max-width: 768px) {
   footer .row {
