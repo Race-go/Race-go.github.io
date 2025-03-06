@@ -125,7 +125,7 @@ h2.pageTitle {
   justify-content: center; /* Center title horizontally */
   align-items: center; /* Center title vertically */
   flex-wrap: wrap; /* Allow wrapping if necessary */
-  padding: 20px; /* Add padding for spacing */
+  padding: 1vw; /* Add padding for spacing */
   width: 100%; /* Full-width container */
   min-height: auto;           /* Let the height adjust dynamically */
   box-sizing: border-box;     /* Include padding in width/height calculations */

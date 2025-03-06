@@ -110,6 +110,19 @@ body {
   object-fit: cover; /* Ensures the image doesn't distort */
 }
 
+#inner-headline {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center title horizontally */
+  align-items: center; /* Center title vertically */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  padding: 1vw; /* Add padding for spacing */
+  width: 100%; /* Full-width container */
+  min-height: auto;           /* Let the height adjust dynamically */
+  box-sizing: border-box;     /* Include padding in width/height calculations */
+  overflow: visible;          /* Prevent clipping of overflowing content */
+  max-height: 100vh; /* Ensure the title doesn't exceed the visible height */
+}
+
 .right-image {
   max-height: 250px !important; /* Slightly larger than left logos */
   width: auto; /* Adjust to match the desired size */
