@@ -166,16 +166,16 @@ header .navbar {
 }
 
 header .navbar-nav > li  {
-    padding-bottom: 0.6vw;
-    padding-top: 0.6vw;
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
 
 header  .navbar-nav > li > a {
-    padding-bottom: 0.3vw;
-    padding-top: 0.25vw;
-    margin-left: 0.1vw;
-    line-height: 1.5vw;
-	font-weight: 700;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    margin-left: 2px;
+    line-height: 30px;
+		font-weight: 700;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -184,8 +184,8 @@ header  .navbar-nav > li > a {
 }
 
 .navbar-nav .nav-item{
-    margin-right: 1.75vw; /* Adds spacing between buttons */
-	font-size: 1.25vw;
+    margin-right: 35px; /* Adds spacing between buttons */
+		font-size: 25px;
   }
 
 .dropdown-menu li a:hover {
@@ -1785,8 +1785,8 @@ font-weight: 700;
 color: #FFFFFF;
 }
 	header .navbar-nav > li {
-padding-bottom: 0.1vw;
-padding-top: 0.15vw;
+padding-bottom: 2px;
+padding-top: 3px;
 }
 	header .nav li .dropdown-menu  {
 		margin-top: 0;

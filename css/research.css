@@ -249,6 +249,16 @@ footer .row {
     justify-content: center; /* Ensure they stack neatly */
     width: 100%; /* Prevent unwanted shifts */
 }
+
+.text-title {
+  font-size: 10px !important; 
+  margin-bottom: 20px !important; 
+}
+
+.text-format {
+  font-size: 8px !important; 
+  margin-bottom: 20px;
+}
 }
 
 @media (max-width: 320px) {
@@ -264,5 +274,15 @@ footer .row {
     align-items: center; /* Center images */
     justify-content: center; /* Ensure they stack neatly */
     width: 100%; /* Prevent unwanted shifts */
+}
+
+.text-title {
+  font-size: 5px !important; 
+  margin-bottom: 10px !important; 
+}
+
+.text-format {
+  font-size: 4px !important; 
+  margin-bottom: 10px;
 }
 }
