@@ -8,8 +8,8 @@
     background-color: #002969; /* Background color */
     position: relative; /* Set relative positioning for the space */
     margin: 0;
-    padding: 10px 0;
-    padding-bottom: 80px;
+    padding: 0.6vw 0;
+    padding-bottom: 4.5vw;
   }
   
   .header-space .container-fluid {
@@ -18,20 +18,10 @@
     justify-content: space-between;
   }
   
-  .page-title-section {
-    margin-top: 20px; /* Adjust spacing above the title */
-  
-  }
-  
-  .page-title-section h1 {
-    font-size: 2.5rem; /* Adjust the title font size */
-    font-weight: bold;
-  }
-  
   .pageTitle {
+    font-size: 2.5vw !important;
     text-align: center !important;
   }
-  
   
   .navbar {
     background-color: #002969; /* Set menu bar background */
@@ -50,7 +40,7 @@
   .navbar .nav-link.active {
     font-weight: bold;
     color: #FFD700; /* Active tab color */
-    border-bottom: 2px solid #FFD700; /* Add an underline for the active tab */
+    border-bottom: 0.1vw solid #FFD700; /* Add an underline for the active tab */
   }
   
   .navbar-toggler {
@@ -68,7 +58,7 @@
   }
   
   .container-fluid img {
-    max-height: 700px; /* Limit image height */
+    max-height: 35vw; /* Limit image height */
     object-fit: cover; /* Crop image to fit if needed */
   }
   
@@ -79,12 +69,11 @@
   
   .left-logos {
     display: flex;
-    gap: 10px; /* Space between left logos */
     flex: 1;
   }
   
   .left-logos img {
-    max-width: 700px; /* Default size for all left logos */
+    max-width: 35vw; /* Default size for all left logos */
     height: auto;     /* Maintain aspect ratio */
   }
   
@@ -101,13 +90,33 @@
   #content {
     flex: 1;
   }
-  
-  .full-width-image {
-    width: 100%; /* Ensure the image spans the full width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image doesn't distort */
-  }  
+
+  h2.pageTitle {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Dynamically adjust the font size */
+  line-height: 1.2;                   /* Ensure spacing between lines */
+  text-align: center;                 /* Center-align the title */
+  margin: 0 auto;                     /* Center the title horizontally */
+  padding: 0.5vw;                      /* Add padding for spacing */
+  word-break: keep-all;               /* Prevent breaking words unnecessarily */
+  overflow-wrap: anywhere;            /* Allow breaks in long words if needed */
+}
+
+  #inner-headline {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center title horizontally */
+    align-items: center; /* Center title vertically */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    padding: 2vw; /* Add padding for spacing */
+    width: 100%; /* Full-width container */
+    min-height: auto;           /* Let the height adjust dynamically */
+    box-sizing: border-box;     /* Include padding in width/height calculations */
+    overflow: visible;          /* Prevent clipping of overflowing content */
+    max-height: 20vw; /* Ensure the title doesn't exceed the visible height */
+  }
+
+.row {
+    margin: 0;
+  }
 
 .news-page {
     display: flex;
@@ -118,24 +127,24 @@
 
 .news-section {
     width: 90%; /* Adjust width as needed */
-    margin: 60px auto; /* Adds spacing between sections */
+    margin: 3vw auto; /* Adds spacing between sections */
 }
 
 .news {
     display: flex;
     flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
     justify-content: center; /* Centers images within the gallery */
-    gap: 20px; /* Adds spacing between images */
-    margin-top: 30px;
+    gap: 1vw; /* Adds spacing between images */
+    margin-top: 4vw;
 }
 
 .news img {
-    max-width: 400px; /* Controls the maximum width of images */
-    max-height: 400px; /* Controls the maximum height of images */
+    max-width: 20vw; /* Controls the maximum width of images */
+    max-height: 20vw; /* Controls the maximum height of images */
     object-fit: cover; /* Ensures images maintain aspect ratio and fit in the box */
     cursor: pointer; /* Makes the images clickable */
-    border: 2px solid #ccc; /* Optional border for styling */
-    border-radius: 5px; /* Optional rounded corners */
+    border: 0.1vw solid #ccc; /* Optional border for styling */
+    border-radius: 0.25vw; /* Optional rounded corners */
     transition: transform 0.3s ease; /* Animation on hover */
 }
 
@@ -160,26 +169,33 @@
     max-width: 90%;
     max-height: 90%;
     object-fit: contain; /* Ensures images maintain aspect ratio in modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for style */
+    box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.5); /* Optional shadow for style */
     display: block; /* Ensures the image is treated as a block for centering */
     margin: auto; /* Centers the image in the modal */
 }
 .close {
     position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 30px;
+    top: 1vw;
+    right: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     color: white;
     cursor: pointer;
 }
 
+.text-title {
+  font-size: 2vw; 
+  text-align: center; 
+  margin-bottom: 2vw; 
+  font-weight: bold;
+}
+
 .news-description {
-    font-size: 16px; /* Adjust as needed for readability */
+    font-size: 1vw; /* Adjust as needed for readability */
     color: #555; /* Subtle color for the description text */
-    margin: 20px auto; /* Space between the description and the gallery */
-    text-align: center; /* Aligns the text to the center */
-    max-width: 800px;
+    margin: 1vw auto; /* Space between the description and the gallery */
+    text-align: justify; /* Aligns the text to the center */
+    max-width: 40vw;
 }
 
 .arrow {
@@ -187,7 +203,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: white;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: bold;
     cursor: pointer;
     user-select: none;
@@ -195,78 +211,30 @@
 }
 
 .left-arrow {
-    left: 20px;
+    left: 1vw;
 }
 
 .right-arrow {
-    right: 20px;
+    right: 1vw;
 }
 
 .arrow:hover {
     color: #ddd;
 }
 
-.left-images {
-  display: flex; /* Enables horizontal alignment */
-  gap: 10px; /* Adds space between the images */
-  position: absolute; /* Allows precise positioning */
-  bottom: 10px; /* Aligns the images at the bottom of the colored space */
-  left: 10px; /* Ensures images are on the left side */
-  padding: 10px; /* Optional padding for spacing */
-}
-
-.small-image {
-  width: 175px; /* Adjust image size as needed */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: contain; /* Ensures the whole image fits within the bounds */
-  margin-right: 10px;
-}
-
-.small-image2 {
-  width: 250px; /* Adjust image size as needed */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: contain; /* Ensures the whole image fits within the bounds */
-  margin-right: 10px;
-}
-
-
-.overlapping-image {
-  position: relative;
-  bottom: 0px; /* Adjust to control the overlap amount */
-  left: 46.9%; /* Center the image horizontally */
-  transform: translateX(-50%); /* Ensure the image is perfectly centered */
-  width: 700px; /* Adjust the size as needed */
-  z-index: 10; /* Ensure it appears above other elements */
-  transition: transform 0.3s ease;
-}
-
 .right-image {
-    max-height: 250px !important; /* Slightly larger than left logos */
+    max-height: 13vw !important; /* Slightly larger than left logos */
     width: auto; /* Adjust to match the desired size */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Maintain aspect ratio */
-    margin-right: 30px;
+    margin-right: 3vw;
   }
 
   .sponsor-logo {
     max-width: 100%; /* Allow the image to scale within its container */
-    width: 700px; /* Set a specific width */
+    width: 35vw; /* Set a specific width */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the image fits without distortion */
-  }
-
-  .logo-container {
-    display: flex; /* Arrange logos in a row */
-    justify-content: center; /* Center logos horizontally */
-    flex-wrap: wrap; /* Allow logos to wrap if needed */
-    gap: 20px; /* Space between logos */
-  }
-
-  /* Wrapper around the image to preserve spacing */
-  .logo-container a {
-    display: inline-block;
-    padding: 0; /* Reset any padding that might affect positioning */
-    margin: 0;  /* Prevent any margin affecting layout */
   }
 
   a {
@@ -286,8 +254,15 @@
   /* Default hover effect for images inside links */
   a:hover img {
     transform: scale(1.05);  /* Slight scale effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+    box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.2);
     cursor: pointer;
+  }
+
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .footer-images img, .stack-images img {
@@ -298,35 +273,39 @@
   /* Adjust individual images */
   .footer-logo {
     width: auto; /* Adjust to fit within available space */
-    max-width: 150px;
+    max-width: 8vw;
     height: auto;
   }
 
   .footer-logo2 {
     width: auto;
-    max-width: 125px;
+    max-width: 6vw;
     height: auto;
   }
 
   .footer-logo3 {
     width: auto;
-    max-width: 312px;
+    max-width: 16vw;
     height: auto;
   }
 
   .stack-logo {
     width: auto;
-    max-width: 188px;
+    max-width: 9vw;
     height: auto;
-    margin-left: 50px;
+    margin-left: 2.5vw;
   }
 
   .stack-images {
     display: flex;
-    flex-direction: column; /* Stack images */
-    align-items: center; /* Align logos in the center */
-    gap: 10px; /* Space between stacked images */
-  }
+    flex-direction: row; /* Ensure they stay in one row */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping when zoomed in */
+    gap: 1vw; /* Keep spacing flexible */
+    max-width: 100%; /* Prevents it from expanding beyond the viewport */
+    overflow: hidden; /* Ensures no horizontal overflow */
+}
 
   /* General alignment settings */
   .footer-images {
@@ -334,31 +313,53 @@
     flex-wrap: wrap;
     flex-direction: row; /* Stack logos within each group */
     align-items: center; /* Center logos */
-    gap: 15px; /* Space between logos */
+    gap: 0.75vw; /* Space between logos */
   }
 
-  @media (max-width: 768px) {
-    .header-space {
-      height: 200px; /* Adjust height for smaller screens */
+  @media (max-width: 1600px) {
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    .overlapping-image {
-      width: 80vw; /* Adjust image size for smaller screens */
-      bottom: 5%; /* Adjust position to fit better */
-    }
-
-    .left-images img {
-      width: 40vw; /* Make small images larger on small screens */
-    }
+    
+    .stack-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center images */
+      justify-content: center; /* Ensure they stack neatly */
+      width: 100%; /* Prevent unwanted shifts */
   }
+}
 
-  /* Media query for very small screens (e.g., mobile) */
-  @media (max-width: 480px) {
-    .left-images img {
-      width: 50vw; /* Make images take up more width on very small screens */
+@media (max-width: 480px) {
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    .overlapping-image {
-      width: 90vw; /* Make the overlapping image almost full-width */
-    }
+    
+    .stack-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center images */
+      justify-content: center; /* Ensure they stack neatly */
+      width: 100%; /* Prevent unwanted shifts */
   }
+}
+
+@media (max-width: 320px) {
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .stack-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center images */
+      justify-content: center; /* Ensure they stack neatly */
+      width: 100%; /* Prevent unwanted shifts */
+  }
+}
