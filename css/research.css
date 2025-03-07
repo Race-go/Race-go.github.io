@@ -8,24 +8,14 @@
   background-color: #002969; /* Background color */
   position: relative; /* Set relative positioning for the space */
   margin: 0;
-  padding: 10px 0;
-  padding-bottom: 80px;
+  padding: 0.6vw 0;
+  padding-bottom: 4.5vw;
 }
 
 .header-space .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.page-title-section {
-  margin-top: 20px; /* Adjust spacing above the title */
-
-}
-
-.page-title-section h1 {
-  font-size: 2.5rem; /* Adjust the title font size */
-  font-weight: bold;
 }
 
 .pageTitle {
@@ -51,7 +41,7 @@
 .navbar .nav-link.active {
   font-weight: bold;
   color: #FFD700; /* Active tab color */
-  border-bottom: 2px solid #FFD700; /* Add an underline for the active tab */
+  border-bottom: 0.1vw solid #FFD700; /* Add an underline for the active tab */
 }
 
 .navbar-toggler {
@@ -69,7 +59,7 @@
 }
 
 .container-fluid img {
-  max-height: 700px; /* Limit image height */
+  max-height: 35vw; /* Limit image height */
   object-fit: cover; /* Crop image to fit if needed */
 }
 
@@ -80,12 +70,11 @@
 
 .left-logos {
   display: flex;
-  gap: 10px; /* Space between left logos */
   flex: 1;
 }
 
 .left-logos img {
-  max-width: 700px; /* Default size for all left logos */
+  max-width: 35vw; /* Default size for all left logos */
   height: auto;     /* Maintain aspect ratio */
 }
 
@@ -103,24 +92,44 @@ body {
   flex: 1;
 }
 
-.full-width-image {
-  width: 100%; /* Ensure the image spans the full width */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 600px; /* Adjust as needed */
-  object-fit: cover; /* Ensures the image doesn't distort */
+h2.pageTitle {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Dynamically adjust the font size */
+  line-height: 1.2;                   /* Ensure spacing between lines */
+  text-align: center;                 /* Center-align the title */
+  margin: 0 auto;                     /* Center the title horizontally */
+  padding: 0.5vw;                      /* Add padding for spacing */
+  word-break: keep-all;               /* Prevent breaking words unnecessarily */
+  overflow-wrap: anywhere;            /* Allow breaks in long words if needed */
+}
+
+#inner-headline {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center title horizontally */
+  align-items: center; /* Center title vertically */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  padding: 2vw; /* Add padding for spacing */
+  width: 100%; /* Full-width container */
+  min-height: auto;           /* Let the height adjust dynamically */
+  box-sizing: border-box;     /* Include padding in width/height calculations */
+  overflow: visible;          /* Prevent clipping of overflowing content */
+  max-height: 20vw; /* Ensure the title doesn't exceed the visible height */
+}
+
+.row {
+  margin: 0;
 }
 
 .right-image {
-  max-height: 250px !important; /* Slightly larger than left logos */
+  max-height: 13vw !important; /* Slightly larger than left logos */
   width: auto; /* Adjust to match the desired size */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Maintain aspect ratio */
-  margin-right: 30px;
+  margin-right: 3vw;
 }
 
 .sponsor-logo {
   max-width: 100%; /* Allow the image to scale within its container */
-  width: 700px; /* Set a specific width */
+  width: 35vw; /* Set a specific width */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Ensure the image fits without distortion */
 }
@@ -134,8 +143,15 @@ a img {
 
 a:hover img {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-images img, .stack-images img {
@@ -146,34 +162,38 @@ a:hover img {
 /* Adjust individual images */
 .footer-logo {
   width: auto; /* Adjust to fit within available space */
-  max-width: 150px;
+  max-width: 8vw;
   height: auto;
 }
 
 .footer-logo2 {
   width: auto;
-  max-width: 125px;
+  max-width: 6vw;
   height: auto;
 }
 
 .footer-logo3 {
   width: auto;
-  max-width: 312px;
+  max-width: 16vw;
   height: auto;
 }
 
 .stack-logo {
   width: auto;
-  max-width: 188px;
+  max-width: 9vw;
   height: auto;
-  margin-left: 50px;
+  margin-left: 2.5vw;
 }
 
 .stack-images {
   display: flex;
-  flex-direction: column; /* Stack images */
-  align-items: center; /* Align logos in the center */
-  gap: 10px; /* Space between stacked images */
+  flex-direction: row; /* Ensure they stay in one row */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping when zoomed in */
+  gap: 1vw; /* Keep spacing flexible */
+  max-width: 100%; /* Prevents it from expanding beyond the viewport */
+  overflow: hidden; /* Ensures no horizontal overflow */
 }
 
 /* General alignment settings */
@@ -182,13 +202,13 @@ a:hover img {
   flex-wrap: wrap;
   flex-direction: row; /* Stack logos within each group */
   align-items: center; /* Center logos */
-  gap: 15px; /* Space between logos */
+  gap: 0.75vw; /* Space between logos */
 }
 
 .text-title {
   font-size: 1.5vw; 
   text-align: center; 
-  margin-bottom: 20px; 
+  margin-bottom: 1vw; 
   font-weight: bold;
 }
 
@@ -199,42 +219,50 @@ a:hover img {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   footer .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .stack-images {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  footer .col-lg-3 {
-    margin-bottom: 0;
-  }
-
-  .ack-page {
-    padding: 10px; /* Reduce padding on smaller screens */
-  }
-
-  .logo-container img,
-  .stacked-logos img {
-    max-width: 80%; /* Further reduce size for smaller devices */
-  }
-
-  h2.pageTitle {
-    font-size: 2rem; /* Smaller font size for tablets and phones */
-  }
+    align-items: center; /* Center images */
+    justify-content: center; /* Ensure they stack neatly */
+    width: 100%; /* Prevent unwanted shifts */
+}
 }
 
 @media (max-width: 480px) {
-  h2.pageTitle {
-    font-size: 1.8rem; /* Even smaller font size for very small screens */
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
+  
+  .stack-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images */
+    justify-content: center; /* Ensure they stack neatly */
+    width: 100%; /* Prevent unwanted shifts */
+}
 }
 
 @media (max-width: 320px) {
-  h2.pageTitle {
-    font-size: 1rem; /* Reduce font size for extremely small screens/zooms */
-    padding: 5px;    /* Adjust padding */
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-
-  #inner-headline {
-    padding: 10px;   /* Ensure enough space around the title */
-  }
+  
+  .stack-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images */
+    justify-content: center; /* Ensure they stack neatly */
+    width: 100%; /* Prevent unwanted shifts */
+}
 }
