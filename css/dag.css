@@ -34,17 +34,17 @@
 
 .navbar .nav-link:hover, 
 .navbar .nav-link:focus {
-  color: #FFD700; /* Highlight color for hover/focus */
+  color: #FDC749; /* Highlight color for hover/focus */
 }
 
 .navbar .nav-link.active {
   font-weight: bold;
-  color: #FFD700; /* Active tab color */
-  border-bottom: 0.1vw solid #FFD700; /* Add an underline for the active tab */
+  color: #FDC749; /* Active tab color */
+  border-bottom: 0.1vw solid #FDC749; /* Add an underline for the active tab */
 }
 
 .navbar-toggler {
-  background-color: #FFD700; /* Highlight toggle button */
+  background-color: #002969; /* Highlight toggle button */
   border: none;
 }
 
