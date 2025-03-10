@@ -35,17 +35,17 @@
 
 .navbar .nav-link:hover, 
 .navbar .nav-link:focus {
-  color: #FFD700; /* Highlight color for hover/focus */
+  color: #FDC749; /* Highlight color for hover/focus */
 }
 
 .navbar .nav-link.active {
   font-weight: bold;
-  color: #FFD700; /* Active tab color */
-  border-bottom: 0.1vw solid #FFD700; /* Add an underline for the active tab */
+  color: #FDC749; /* Active tab color */
+  border-bottom: 0.1vw solid #FDC749; /* Add an underline for the active tab */
 }
 
 .navbar-toggler {
-  background-color: #FFD700; /* Highlight toggle button */
+  background-color: #002969; /* Highlight toggle button */
   border: none;
 }
 
@@ -218,6 +218,13 @@ footer .row {
   text-align: justify;
 }
 
+.widget {
+  font-size: 0.85vw;
+}
+
+.widgetheading {
+  font-size: 1vw;
+}
 
 @media (max-width: 1600px) {
   footer .row {
@@ -233,7 +240,25 @@ footer .row {
     justify-content: center; /* Ensure they stack neatly */
     width: 100%; /* Prevent unwanted shifts */
 }
+
+.widget {
+  font-size: 1vw;
 }
+
+.widgetheading {
+  font-size: 1.2vw;
+}
+}
+
+@media (max-width: 960px) {  
+  .widget {
+    font-size: 1.2vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.5vw;
+  }
+  }
 
 @media (max-width: 480px) {
   footer .row {
@@ -258,6 +283,14 @@ footer .row {
 .text-format {
   font-size: 8px !important; 
   margin-bottom: 20px;
+}
+
+.widget {
+  font-size: 1.5vw;
+}
+
+.widgetheading {
+  font-size: 1.8vw;
 }
 }
 
@@ -284,5 +317,13 @@ footer .row {
 .text-format {
   font-size: 4px !important; 
   margin-bottom: 10px;
+}
+
+.widget {
+  font-size: 1.8vw;
+}
+
+.widgetheading {
+  font-size: 2vw;
 }
 }

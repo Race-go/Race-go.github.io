@@ -34,17 +34,17 @@
 
 .navbar .nav-link:hover, 
 .navbar .nav-link:focus {
-  color: #FFD700; /* Highlight color for hover/focus */
+  color: #FDC749; /* Highlight color for hover/focus */
 }
 
 .navbar .nav-link.active {
   font-weight: bold;
-  color: #FFD700; /* Active tab color */
-  border-bottom: 0.1vw solid #FFD700; /* Add an underline for the active tab */
+  color: #FDC749; /* Active tab color */
+  border-bottom: 0.1vw solid #FDC749; /* Add an underline for the active tab */
 }
 
 .navbar-toggler {
-  background-color: #FFD700; /* Highlight toggle button */
+  background-color: #002969; /* Highlight toggle button */
   border: none;
 }
 
@@ -363,6 +363,14 @@ footer .row {
   gap: 0.75vw; /* Space between logos */
 }
 
+.widget {
+  font-size: 0.85vw;
+}
+
+.widgetheading {
+  font-size: 1vw;
+}
+
 @media (max-width: 1600px) {
   footer .row {
       flex-direction: column;
@@ -377,6 +385,14 @@ footer .row {
     justify-content: center; /* Ensure they stack neatly */
     width: 100%; /* Prevent unwanted shifts */
 }
+
+.widget {
+  font-size: 1vw;
+}
+
+.widgetheading {
+  font-size: 1.2vw;
+}
 }
 
 @media (max-width: 960px) {
@@ -389,6 +405,14 @@ footer .row {
       font-size: 16px; /* Adjust as needed for readability */
       margin: 16px auto; /* Space between the description and the gallery */
       max-width: 80%;
+  }
+
+  .widget {
+    font-size: 1.2vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.5vw;
   }
   }
   
@@ -417,6 +441,14 @@ footer .row {
         margin: 8px auto; /* Space between the description and the gallery */
         max-width: 80%;
     }
+
+    .widget {
+      font-size: 1.5vw;
+    }
+    
+    .widgetheading {
+      font-size: 1.8vw;
+    }
   }
   
   @media (max-width: 320px) {
@@ -443,5 +475,13 @@ footer .row {
         font-size: 4px; /* Adjust as needed for readability */
         margin: 4px auto; /* Space between the description and the gallery */
         max-width: 80%;
+    }
+
+    .widget {
+      font-size: 1.8vw;
+    }
+    
+    .widgetheading {
+      font-size: 2vw;
     }
   }
