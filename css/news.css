@@ -316,6 +316,14 @@
     gap: 0.75vw; /* Space between logos */
   }
 
+  .widget {
+    font-size: 0.85vw;
+  }
+
+  .widgetheading {
+    font-size: 1vw;
+  }
+
   @media (max-width: 1600px) {
     footer .row {
         flex-direction: column;
@@ -330,6 +338,14 @@
       justify-content: center; /* Ensure they stack neatly */
       width: 100%; /* Prevent unwanted shifts */
   }
+
+  .widget {
+    font-size: 1vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.2vw;
+  }
 }
 
 @media (max-width: 960px) {
@@ -342,6 +358,14 @@
     font-size: 16px; /* Adjust as needed for readability */
     margin: 16px auto; /* Space between the description and the gallery */
     max-width: 80%;
+}
+
+.widget {
+  font-size: 1.2vw;
+}
+
+.widgetheading {
+  font-size: 1.5vw;
 }
 }
 
@@ -370,6 +394,14 @@
       margin: 8px auto; /* Space between the description and the gallery */
       max-width: 80%;
   }
+
+  .widget {
+    font-size: 1.5vw;
+  }
+
+  .widgetheading {
+    font-size: 1.8vw;
+  }
 }
 
 @media (max-width: 320px) {
@@ -396,5 +428,12 @@
       font-size: 4px; /* Adjust as needed for readability */
       margin: 4px auto; /* Space between the description and the gallery */
       max-width: 80%;
+  }
+  .widget {
+    font-size: 1.8vw;
+  }
+
+  .widgetheading {
+    font-size: 2vw;
   }
 }

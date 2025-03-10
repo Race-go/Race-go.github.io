@@ -227,6 +227,14 @@ footer .row {
   margin-bottom: 2vw;
 }
 
+.widget {
+  font-size: 0.85vw;
+}
+
+.widgetheading {
+  font-size: 1vw;
+}
+
 @media (max-width: 1600px) {
   footer .row {
       flex-direction: column;
@@ -241,7 +249,25 @@ footer .row {
     justify-content: center; /* Ensure they stack neatly */
     width: 100%; /* Prevent unwanted shifts */
 }
+
+.widget {
+  font-size: 1vw;
 }
+
+.widgetheading {
+  font-size: 1.2vw;
+}
+}
+
+@media (max-width: 960px) {  
+  .widget {
+    font-size: 1.2vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.5vw;
+  }
+  }
 
 @media (max-width: 480px) {
   footer .row {
@@ -266,6 +292,14 @@ footer .row {
 .text-format {
   font-size: 8px !important; 
   margin-bottom: 20px;
+}
+
+.widget {
+  font-size: 1.5vw;
+}
+
+.widgetheading {
+  font-size: 1.8vw;
 }
 }
 
@@ -292,5 +326,14 @@ footer .row {
 .text-format {
   font-size: 4px !important; 
   margin-bottom: 10px;
+}
+
+
+.widget {
+  font-size: 1.8vw;
+}
+
+.widgetheading {
+  font-size: 2vw;
 }
 }

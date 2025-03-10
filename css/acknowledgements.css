@@ -348,11 +348,27 @@ img[alt="Logo 2"] {
   display: block;
 }
 
+.widget {
+  font-size: 0.85vw;
+}
+
+.widgetheading {
+  font-size: 1vw;
+}
+
 @media (max-width: 1600px) {
   footer .row {
       flex-direction: column;
       align-items: center;
       text-align: center;
+  }
+
+  .widget {
+    font-size: 1vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.2vw;
   }
 }
 
@@ -360,6 +376,14 @@ img[alt="Logo 2"] {
   .ack-description {
     font-size: 16px;
     max-width: 80%;
+  }
+
+  .widget {
+    font-size: 1.2vw;
+  }
+  
+  .widgetheading {
+    font-size: 1.5vw;
   }
   }
 
@@ -374,6 +398,14 @@ img[alt="Logo 2"] {
     font-size: 8px;
     max-width: 80%;
   }
+  
+.widget {
+  font-size: 1.5vw;
+}
+
+.widgetheading {
+  font-size: 1.8vw;
+}
 }
 
 @media (max-width: 320px) {
@@ -386,5 +418,13 @@ img[alt="Logo 2"] {
   .ack-description {
     font-size: 4px;
     max-width: 80%;
+  }
+
+  .widget {
+    font-size: 1.8vw;
+  }
+  
+  .widgetheading {
+    font-size: 2vw;
   }
 }
