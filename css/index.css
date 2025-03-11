@@ -154,6 +154,10 @@ a:hover img {
   cursor: pointer;
 }
 
+figcaption a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
 footer .row {
   display: flex;
   flex-wrap: wrap;
