@@ -165,7 +165,7 @@ h2.pageTitle {
   justify-content: center;           /* Horizontally center logos */
   align-items: center;               /* Vertically center logos */
   gap: 1vw;                         /* Space between logos */
-  margin: 0 auto;                    /* Center container within its parent */
+  margin: auto auto 1.5vw auto;         /* Center container within its parent */
   padding: 0;                        /* Remove padding */
   width: auto;                       /* Container width should fit its content */
   max-width: 100%;                   /* Prevent overflow */
@@ -268,6 +268,7 @@ h2.pageTitle {
   text-align: center; /* Fallback for centering */
   padding: 1vw;
   margin-bottom: 1vw;
+  margin-top: 1vw;
 }
 
 .stack {
@@ -277,8 +278,7 @@ h2.pageTitle {
   height: auto;
   object-fit: contain;
   display: block;
-  margin: auto; /* Centers the image horizontally */
-  object-fit: contain; /* Maintain aspect ratio */
+  margin: 0 auto 2.5vw auto !important; /* Centers the image horizontally */
 }
 
 .unique-logo {
