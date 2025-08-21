@@ -206,8 +206,10 @@
     Object.keys(sections).forEach(sectionId => {
       const dag = document.getElementById(sectionId);
         sections[sectionId].forEach((imageSrc, index) => {
+            const thumbSrc = imageSrc.replace(/(album\/News\/[^/]+)\//, '$1/thumbs/');
             const imgElement = document.createElement('img');
-            imgElement.src = imageSrc;
+            imgElement.src = thumbSrc; // load small thumbnail
+            imgElement.loading = 'lazy'; // lazy load thumbnail
             imgElement.alt = "Photo";
             imgElement.classList.add('dag-item');
             imgElement.addEventListener('click', () => {
