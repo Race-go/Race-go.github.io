@@ -9,7 +9,7 @@
   position: relative; /* Set relative positioning for the space */
   margin: 0;
   padding: 0.6vw 0;
-  padding-bottom: 4.5vw;
+  padding-bottom: 2.5vw;
 }
 
 .header-space .container-fluid {
@@ -247,11 +247,11 @@ h2.pageTitle {
 }
 
 .right-image {
-  max-height: 13vw !important; /* Slightly larger than left logos */
+  max-height: 22vw !important; /* Slightly larger than left logos */
   width: auto; /* Adjust to match the desired size */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Maintain aspect ratio */
-  margin-right: 3vw;
+  margin-right: 4vw;
 }
 
 .sponsor-logo {
