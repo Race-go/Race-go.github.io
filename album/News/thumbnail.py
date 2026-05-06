@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 # Set the root folder where your image albums are stored
-ROOT_FOLDER = r"C:\Users\nt23q323\Documents\Race-go.github.io\album\News"
+ROOT_FOLDER = r"C:\Users\nt23q323\Documents\Race-go.github.io\album\Header\test"
 
 # Thumbnail settings
 THUMB_WIDTH = 300  # pixels
